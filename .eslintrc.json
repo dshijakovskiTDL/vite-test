@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "node": {
+                "paths": ["src"],
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            },
+            "typescript": {}
+        }
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "no-console": "off",
+        "no-var": "error",
+        "no-unused-vars": "error",
+        "no-else-return": "warn",
+        "semi": ["error", "never"],
+        "indent": ["warn", 4],
+        "react/jsx-indent": ["warn", 4],
+        "jsx-quotes": ["error", "prefer-single"],
+        "comma-dangle": "off",
+        "no-use-before-define": "off",
+        "arrow-parens": ["error", "as-needed"],
+        "react/button-has-type": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "quotes": ["warn", "single", { "allowTemplateLiterals": true }],
+        "react/jsx-filename-extension": [ "warn", {"extensions": [".tsx"]} ],
+        "import/extensions": "off",
+        "import/prefer-default-export": "off"
+    }
+}
